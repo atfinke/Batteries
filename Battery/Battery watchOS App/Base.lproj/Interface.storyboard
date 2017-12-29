@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder.WatchKit.Storyboard" version="3.0" toolsVersion="13771" targetRuntime="watchKit" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="AgC-eL-Hgc">
+    <device id="watch38" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="watchOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBWatchKitPlugin" version="13756"/>
+    </dependencies>
+    <scenes>
+        <!--Interface Controller-->
+        <scene sceneID="aou-V4-d1y">
+            <objects>
+                <controller id="AgC-eL-Hgc" customClass="InterfaceController" customModule="Battery" customModuleProvider="target">
+                    <items>
+                        <table alignment="left" id="5Sq-U5-peV">
+                            <items>
+                                <tableRow identifier="DeviceRowController" selectable="NO" id="NhD-v4-LQp" customClass="DeviceRowController" customModule="Battery_Extension">
+                                    <group key="rootItem" width="1" alignment="left" id="vUO-LT-1f1">
+                                        <items>
+                                            <label alignment="right" verticalAlignment="center" text="Label" id="d6G-A6-Efa"/>
+                                            <label alignment="left" verticalAlignment="center" text="Label" id="LlP-oA-xhu"/>
+                                        </items>
+                                    </group>
+                                    <connections>
+                                        <outlet property="batteryLabel" destination="d6G-A6-Efa" id="mh0-e0-QxL"/>
+                                        <outlet property="nameLabel" destination="LlP-oA-xhu" id="pT4-or-VB3"/>
+                                    </connections>
+                                </tableRow>
+                            </items>
+                        </table>
+                    </items>
+                    <connections>
+                        <outlet property="deviceTable" destination="5Sq-U5-peV" id="3um-jg-dh1"/>
+                    </connections>
+                </controller>
+            </objects>
+        </scene>
+    </scenes>
+</document>
