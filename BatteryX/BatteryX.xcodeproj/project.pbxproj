@@ -1,0 +1,950 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		14016EB5236E193C00FAADB4 /* DeviceView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14016EB4236E193C00FAADB4 /* DeviceView.swift */; };
+		1422CC3A233C3A32005BE62F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422CC39233C3A32005BE62F /* AppDelegate.swift */; };
+		1422CC3C233C3A32005BE62F /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422CC3B233C3A32005BE62F /* SceneDelegate.swift */; };
+		1422CC3E233C3A32005BE62F /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1422CC3D233C3A32005BE62F /* ContentView.swift */; };
+		1422CC40233C3A33005BE62F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1422CC3F233C3A33005BE62F /* Assets.xcassets */; };
+		1422CC43233C3A33005BE62F /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1422CC42233C3A33005BE62F /* Preview Assets.xcassets */; };
+		1422CC46233C3A33005BE62F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1422CC44233C3A33005BE62F /* LaunchScreen.storyboard */; };
+		14265DB2233E5785008F9092 /* Model+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14265DB1233E5785008F9092 /* Model+System.swift */; };
+		14265DB3233E5785008F9092 /* Model+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14265DB1233E5785008F9092 /* Model+System.swift */; };
+		14277414233D21CA0002B377 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14277413233D21CA0002B377 /* Logging.swift */; };
+		142AD085233EA18200ACF451 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142AD084233EA18200ACF451 /* AppDelegate.swift */; };
+		142AD087233EA18200ACF451 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 142AD086233EA18200ACF451 /* ContentView.swift */; };
+		142AD089233EA18200ACF451 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142AD088233EA18200ACF451 /* Assets.xcassets */; };
+		142AD08C233EA18200ACF451 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 142AD08B233EA18200ACF451 /* Preview Assets.xcassets */; };
+		142AD08F233EA18200ACF451 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 142AD08D233EA18200ACF451 /* Main.storyboard */; };
+		142AD095233EA18E00ACF451 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14277413233D21CA0002B377 /* Logging.swift */; };
+		142AD096233EA18E00ACF451 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83590233C45B70074171B /* Battery.swift */; };
+		142AD097233EA18E00ACF451 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E8358F233C45B70074171B /* BatteryState.swift */; };
+		142AD098233EA18E00ACF451 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83591233C45B70074171B /* Cloud.swift */; };
+		142AD099233EA18E00ACF451 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83593233C45B70074171B /* Device.swift */; };
+		142AD09A233EA18E00ACF451 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83592233C45B70074171B /* Model.swift */; };
+		142AD09B233EA18E00ACF451 /* Model+System.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14265DB1233E5785008F9092 /* Model+System.swift */; };
+		142AD09D233EA40800ACF451 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 142AD09C233EA40800ACF451 /* CloudKit.framework */; };
+		14E36169233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app in Embed Watch Content */ = {isa = PBXBuildFile; fileRef = 14E36168233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14E3616F233DC31100F9DF95 /* Interface.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 14E3616D233DC31100F9DF95 /* Interface.storyboard */; };
+		14E36171233DC31300F9DF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E36170233DC31300F9DF95 /* Assets.xcassets */; };
+		14E36178233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 14E36177233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		14E3617D233DC31400F9DF95 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3617C233DC31400F9DF95 /* ContentView.swift */; };
+		14E3617F233DC31400F9DF95 /* HostingController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E3617E233DC31400F9DF95 /* HostingController.swift */; };
+		14E36181233DC31400F9DF95 /* ExtensionDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E36180233DC31400F9DF95 /* ExtensionDelegate.swift */; };
+		14E36183233DC31400F9DF95 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E36182233DC31400F9DF95 /* Assets.xcassets */; };
+		14E36186233DC31400F9DF95 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 14E36185233DC31400F9DF95 /* Preview Assets.xcassets */; };
+		14E36193233DC32100F9DF95 /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83590233C45B70074171B /* Battery.swift */; };
+		14E36194233DC32100F9DF95 /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E8358F233C45B70074171B /* BatteryState.swift */; };
+		14E36195233DC32100F9DF95 /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83591233C45B70074171B /* Cloud.swift */; };
+		14E36196233DC32100F9DF95 /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83593233C45B70074171B /* Device.swift */; };
+		14E36197233DC32100F9DF95 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83592233C45B70074171B /* Model.swift */; };
+		14E36198233DC32D00F9DF95 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14277413233D21CA0002B377 /* Logging.swift */; };
+		14E3619B233DC4A600F9DF95 /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E3619A233DC4A600F9DF95 /* CloudKit.framework */; };
+		14E83594233C45B70074171B /* BatteryState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E8358F233C45B70074171B /* BatteryState.swift */; };
+		14E83595233C45B70074171B /* Battery.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83590233C45B70074171B /* Battery.swift */; };
+		14E83596233C45B70074171B /* Cloud.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83591233C45B70074171B /* Cloud.swift */; };
+		14E83597233C45B70074171B /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83592233C45B70074171B /* Model.swift */; };
+		14E83598233C45B70074171B /* Device.swift in Sources */ = {isa = PBXBuildFile; fileRef = 14E83593233C45B70074171B /* Device.swift */; };
+		14E8359C233C674D0074171B /* CloudKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 14E8359B233C674D0074171B /* CloudKit.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		14E3616A233DC31100F9DF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1422CC2E233C3A32005BE62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14E36167233DC31100F9DF95;
+			remoteInfo = "BatteryX.Watch WatchKit App";
+		};
+		14E36179233DC31400F9DF95 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1422CC2E233C3A32005BE62F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 14E36176233DC31400F9DF95;
+			remoteInfo = "BatteryX.Watch WatchKit Extension";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		14E3618A233DC31400F9DF95 /* Embed Watch Content */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "$(CONTENTS_FOLDER_PATH)/Watch";
+			dstSubfolderSpec = 16;
+			files = (
+				14E36169233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app in Embed Watch Content */,
+			);
+			name = "Embed Watch Content";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E3618D233DC31400F9DF95 /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				14E36178233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		14016EB4236E193C00FAADB4 /* DeviceView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeviceView.swift; sourceTree = "<group>"; };
+		1422CC36233C3A32005BE62F /* BatteryX.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryX.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1422CC39233C3A32005BE62F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		1422CC3B233C3A32005BE62F /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		1422CC3D233C3A32005BE62F /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		1422CC3F233C3A33005BE62F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		1422CC42233C3A33005BE62F /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		1422CC45233C3A33005BE62F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		1422CC47233C3A33005BE62F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14265DB1233E5785008F9092 /* Model+System.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Model+System.swift"; sourceTree = "<group>"; };
+		14277413233D21CA0002B377 /* Logging.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Logging.swift; sourceTree = "<group>"; };
+		142AD082233EA18200ACF451 /* Battery.Mac.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Battery.Mac.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		142AD084233EA18200ACF451 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		142AD086233EA18200ACF451 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		142AD088233EA18200ACF451 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		142AD08B233EA18200ACF451 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		142AD08E233EA18200ACF451 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		142AD090233EA18200ACF451 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		142AD091233EA18200ACF451 /* Battery_Mac.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = Battery_Mac.entitlements; sourceTree = "<group>"; };
+		142AD09C233EA40800ACF451 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		14E36165233DC31100F9DF95 /* BatteryX.Watch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = BatteryX.Watch.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E36168233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "BatteryX.Watch WatchKit App.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E3616E233DC31100F9DF95 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Interface.storyboard; sourceTree = "<group>"; };
+		14E36170233DC31300F9DF95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14E36172233DC31300F9DF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E36177233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = "BatteryX.Watch WatchKit Extension.appex"; sourceTree = BUILT_PRODUCTS_DIR; };
+		14E3617C233DC31400F9DF95 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		14E3617E233DC31400F9DF95 /* HostingController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HostingController.swift; sourceTree = "<group>"; };
+		14E36180233DC31400F9DF95 /* ExtensionDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExtensionDelegate.swift; sourceTree = "<group>"; };
+		14E36182233DC31400F9DF95 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		14E36185233DC31400F9DF95 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		14E36187233DC31400F9DF95 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		14E36199233DC4A300F9DF95 /* BatteryX.Watch WatchKit Extension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "BatteryX.Watch WatchKit Extension.entitlements"; sourceTree = "<group>"; };
+		14E3619A233DC4A600F9DF95 /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = Platforms/WatchOS.platform/Developer/SDKs/WatchOS6.0.sdk/System/Library/Frameworks/CloudKit.framework; sourceTree = DEVELOPER_DIR; };
+		14E8358F233C45B70074171B /* BatteryState.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BatteryState.swift; sourceTree = "<group>"; };
+		14E83590233C45B70074171B /* Battery.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Battery.swift; sourceTree = "<group>"; };
+		14E83591233C45B70074171B /* Cloud.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Cloud.swift; sourceTree = "<group>"; };
+		14E83592233C45B70074171B /* Model.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
+		14E83593233C45B70074171B /* Device.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Device.swift; sourceTree = "<group>"; };
+		14E83599233C67490074171B /* BatteryX.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = BatteryX.entitlements; sourceTree = "<group>"; };
+		14E8359B233C674D0074171B /* CloudKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CloudKit.framework; path = System/Library/Frameworks/CloudKit.framework; sourceTree = SDKROOT; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1422CC33233C3A32005BE62F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E8359C233C674D0074171B /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		142AD07F233EA18200ACF451 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142AD09D233EA40800ACF451 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E36174233DC31400F9DF95 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E3619B233DC4A600F9DF95 /* CloudKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1422CC2D233C3A32005BE62F = {
+			isa = PBXGroup;
+			children = (
+				1422CC38233C3A32005BE62F /* BatteryX */,
+				14E3616C233DC31100F9DF95 /* BatteryX.Watch WatchKit App */,
+				14E3617B233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension */,
+				142AD083233EA18200ACF451 /* Battery.Mac */,
+				1422CC37233C3A32005BE62F /* Products */,
+				14E8359A233C674D0074171B /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		1422CC37233C3A32005BE62F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1422CC36233C3A32005BE62F /* BatteryX.app */,
+				14E36165233DC31100F9DF95 /* BatteryX.Watch.app */,
+				14E36168233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app */,
+				14E36177233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex */,
+				142AD082233EA18200ACF451 /* Battery.Mac.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1422CC38233C3A32005BE62F /* BatteryX */ = {
+			isa = PBXGroup;
+			children = (
+				14E83599233C67490074171B /* BatteryX.entitlements */,
+				1422CC39233C3A32005BE62F /* AppDelegate.swift */,
+				1422CC3B233C3A32005BE62F /* SceneDelegate.swift */,
+				1422CC3D233C3A32005BE62F /* ContentView.swift */,
+				14016EB4236E193C00FAADB4 /* DeviceView.swift */,
+				14277413233D21CA0002B377 /* Logging.swift */,
+				14E83590233C45B70074171B /* Battery.swift */,
+				14E8358F233C45B70074171B /* BatteryState.swift */,
+				14E83591233C45B70074171B /* Cloud.swift */,
+				14E83593233C45B70074171B /* Device.swift */,
+				14E83592233C45B70074171B /* Model.swift */,
+				14265DB1233E5785008F9092 /* Model+System.swift */,
+				1422CC3F233C3A33005BE62F /* Assets.xcassets */,
+				1422CC44233C3A33005BE62F /* LaunchScreen.storyboard */,
+				1422CC47233C3A33005BE62F /* Info.plist */,
+				1422CC41233C3A33005BE62F /* Preview Content */,
+			);
+			path = BatteryX;
+			sourceTree = "<group>";
+		};
+		1422CC41233C3A33005BE62F /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				1422CC42233C3A33005BE62F /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		142AD083233EA18200ACF451 /* Battery.Mac */ = {
+			isa = PBXGroup;
+			children = (
+				142AD084233EA18200ACF451 /* AppDelegate.swift */,
+				142AD086233EA18200ACF451 /* ContentView.swift */,
+				142AD088233EA18200ACF451 /* Assets.xcassets */,
+				142AD08D233EA18200ACF451 /* Main.storyboard */,
+				142AD090233EA18200ACF451 /* Info.plist */,
+				142AD091233EA18200ACF451 /* Battery_Mac.entitlements */,
+				142AD08A233EA18200ACF451 /* Preview Content */,
+			);
+			path = Battery.Mac;
+			sourceTree = "<group>";
+		};
+		142AD08A233EA18200ACF451 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				142AD08B233EA18200ACF451 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14E3616C233DC31100F9DF95 /* BatteryX.Watch WatchKit App */ = {
+			isa = PBXGroup;
+			children = (
+				14E3616D233DC31100F9DF95 /* Interface.storyboard */,
+				14E36170233DC31300F9DF95 /* Assets.xcassets */,
+				14E36172233DC31300F9DF95 /* Info.plist */,
+			);
+			path = "BatteryX.Watch WatchKit App";
+			sourceTree = "<group>";
+		};
+		14E3617B233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension */ = {
+			isa = PBXGroup;
+			children = (
+				14E36199233DC4A300F9DF95 /* BatteryX.Watch WatchKit Extension.entitlements */,
+				14E3617C233DC31400F9DF95 /* ContentView.swift */,
+				14E3617E233DC31400F9DF95 /* HostingController.swift */,
+				14E36180233DC31400F9DF95 /* ExtensionDelegate.swift */,
+				14E36182233DC31400F9DF95 /* Assets.xcassets */,
+				14E36187233DC31400F9DF95 /* Info.plist */,
+				14E36184233DC31400F9DF95 /* Preview Content */,
+			);
+			path = "BatteryX.Watch WatchKit Extension";
+			sourceTree = "<group>";
+		};
+		14E36184233DC31400F9DF95 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				14E36185233DC31400F9DF95 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		14E8359A233C674D0074171B /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				142AD09C233EA40800ACF451 /* CloudKit.framework */,
+				14E3619A233DC4A600F9DF95 /* CloudKit.framework */,
+				14E8359B233C674D0074171B /* CloudKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1422CC35233C3A32005BE62F /* BatteryX */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1422CC4A233C3A33005BE62F /* Build configuration list for PBXNativeTarget "BatteryX" */;
+			buildPhases = (
+				1422CC32233C3A32005BE62F /* Sources */,
+				1422CC33233C3A32005BE62F /* Frameworks */,
+				1422CC34233C3A32005BE62F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = BatteryX;
+			productName = BatteryX;
+			productReference = 1422CC36233C3A32005BE62F /* BatteryX.app */;
+			productType = "com.apple.product-type.application";
+		};
+		142AD081233EA18200ACF451 /* Battery.Mac */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 142AD094233EA18200ACF451 /* Build configuration list for PBXNativeTarget "Battery.Mac" */;
+			buildPhases = (
+				142AD07E233EA18200ACF451 /* Sources */,
+				142AD07F233EA18200ACF451 /* Frameworks */,
+				142AD080233EA18200ACF451 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Battery.Mac;
+			productName = Battery.Mac;
+			productReference = 142AD082233EA18200ACF451 /* Battery.Mac.app */;
+			productType = "com.apple.product-type.application";
+		};
+		14E36164233DC31100F9DF95 /* BatteryX.Watch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E36192233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch" */;
+			buildPhases = (
+				14E36163233DC31100F9DF95 /* Resources */,
+				14E3618A233DC31400F9DF95 /* Embed Watch Content */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14E3616B233DC31100F9DF95 /* PBXTargetDependency */,
+			);
+			name = BatteryX.Watch;
+			productName = BatteryX.Watch;
+			productReference = 14E36165233DC31100F9DF95 /* BatteryX.Watch.app */;
+			productType = "com.apple.product-type.application.watchapp2-container";
+		};
+		14E36167233DC31100F9DF95 /* BatteryX.Watch WatchKit App */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E36191233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch WatchKit App" */;
+			buildPhases = (
+				14E36166233DC31100F9DF95 /* Resources */,
+				14E3618D233DC31400F9DF95 /* Embed App Extensions */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				14E3617A233DC31400F9DF95 /* PBXTargetDependency */,
+			);
+			name = "BatteryX.Watch WatchKit App";
+			productName = "BatteryX.Watch WatchKit App";
+			productReference = 14E36168233DC31100F9DF95 /* BatteryX.Watch WatchKit App.app */;
+			productType = "com.apple.product-type.application.watchapp2";
+		};
+		14E36176233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 14E36190233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch WatchKit Extension" */;
+			buildPhases = (
+				14E36173233DC31400F9DF95 /* Sources */,
+				14E36174233DC31400F9DF95 /* Frameworks */,
+				14E36175233DC31400F9DF95 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "BatteryX.Watch WatchKit Extension";
+			productName = "BatteryX.Watch WatchKit Extension";
+			productReference = 14E36177233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension.appex */;
+			productType = "com.apple.product-type.watchkit2-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1422CC2E233C3A32005BE62F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = "Andrew Finke";
+				TargetAttributes = {
+					1422CC35233C3A32005BE62F = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					142AD081233EA18200ACF451 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					14E36164233DC31100F9DF95 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					14E36167233DC31100F9DF95 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+					14E36176233DC31400F9DF95 = {
+						CreatedOnToolsVersion = 11.0;
+					};
+				};
+			};
+			buildConfigurationList = 1422CC31233C3A32005BE62F /* Build configuration list for PBXProject "BatteryX" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1422CC2D233C3A32005BE62F;
+			productRefGroup = 1422CC37233C3A32005BE62F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1422CC35233C3A32005BE62F /* BatteryX */,
+				14E36164233DC31100F9DF95 /* BatteryX.Watch */,
+				14E36167233DC31100F9DF95 /* BatteryX.Watch WatchKit App */,
+				14E36176233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension */,
+				142AD081233EA18200ACF451 /* Battery.Mac */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1422CC34233C3A32005BE62F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1422CC46233C3A33005BE62F /* LaunchScreen.storyboard in Resources */,
+				1422CC43233C3A33005BE62F /* Preview Assets.xcassets in Resources */,
+				1422CC40233C3A33005BE62F /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		142AD080233EA18200ACF451 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142AD08F233EA18200ACF451 /* Main.storyboard in Resources */,
+				142AD08C233EA18200ACF451 /* Preview Assets.xcassets in Resources */,
+				142AD089233EA18200ACF451 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E36163233DC31100F9DF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E36166233DC31100F9DF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E36171233DC31300F9DF95 /* Assets.xcassets in Resources */,
+				14E3616F233DC31100F9DF95 /* Interface.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E36175233DC31400F9DF95 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E36186233DC31400F9DF95 /* Preview Assets.xcassets in Resources */,
+				14E36183233DC31400F9DF95 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1422CC32233C3A32005BE62F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E83595233C45B70074171B /* Battery.swift in Sources */,
+				1422CC3A233C3A32005BE62F /* AppDelegate.swift in Sources */,
+				14E83594233C45B70074171B /* BatteryState.swift in Sources */,
+				14E83598233C45B70074171B /* Device.swift in Sources */,
+				1422CC3C233C3A32005BE62F /* SceneDelegate.swift in Sources */,
+				14E83596233C45B70074171B /* Cloud.swift in Sources */,
+				14016EB5236E193C00FAADB4 /* DeviceView.swift in Sources */,
+				14E83597233C45B70074171B /* Model.swift in Sources */,
+				14277414233D21CA0002B377 /* Logging.swift in Sources */,
+				14265DB2233E5785008F9092 /* Model+System.swift in Sources */,
+				1422CC3E233C3A32005BE62F /* ContentView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		142AD07E233EA18200ACF451 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				142AD087233EA18200ACF451 /* ContentView.swift in Sources */,
+				142AD098233EA18E00ACF451 /* Cloud.swift in Sources */,
+				142AD095233EA18E00ACF451 /* Logging.swift in Sources */,
+				142AD085233EA18200ACF451 /* AppDelegate.swift in Sources */,
+				142AD096233EA18E00ACF451 /* Battery.swift in Sources */,
+				142AD09B233EA18E00ACF451 /* Model+System.swift in Sources */,
+				142AD099233EA18E00ACF451 /* Device.swift in Sources */,
+				142AD097233EA18E00ACF451 /* BatteryState.swift in Sources */,
+				142AD09A233EA18E00ACF451 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		14E36173233DC31400F9DF95 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				14E3617F233DC31400F9DF95 /* HostingController.swift in Sources */,
+				14E36195233DC32100F9DF95 /* Cloud.swift in Sources */,
+				14E3617D233DC31400F9DF95 /* ContentView.swift in Sources */,
+				14E36181233DC31400F9DF95 /* ExtensionDelegate.swift in Sources */,
+				14E36193233DC32100F9DF95 /* Battery.swift in Sources */,
+				14E36196233DC32100F9DF95 /* Device.swift in Sources */,
+				14E36194233DC32100F9DF95 /* BatteryState.swift in Sources */,
+				14E36198233DC32D00F9DF95 /* Logging.swift in Sources */,
+				14265DB3233E5785008F9092 /* Model+System.swift in Sources */,
+				14E36197233DC32100F9DF95 /* Model.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		14E3616B233DC31100F9DF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14E36167233DC31100F9DF95 /* BatteryX.Watch WatchKit App */;
+			targetProxy = 14E3616A233DC31100F9DF95 /* PBXContainerItemProxy */;
+		};
+		14E3617A233DC31400F9DF95 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 14E36176233DC31400F9DF95 /* BatteryX.Watch WatchKit Extension */;
+			targetProxy = 14E36179233DC31400F9DF95 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1422CC44233C3A33005BE62F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1422CC45233C3A33005BE62F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		142AD08D233EA18200ACF451 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				142AD08E233EA18200ACF451 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		14E3616D233DC31100F9DF95 /* Interface.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				14E3616E233DC31100F9DF95 /* Base */,
+			);
+			name = Interface.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1422CC48233C3A33005BE62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		1422CC49233C3A33005BE62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1422CC4B233C3A33005BE62F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BatteryX/BatteryX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryX/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BatteryX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.BatteryX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		1422CC4C233C3A33005BE62F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = BatteryX/BatteryX.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryX/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = BatteryX/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.andrewfinke.BatteryX;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SUPPORTS_MACCATALYST = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		142AD092233EA18200ACF451 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Battery.Mac/Battery_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Battery.Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Battery.Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.Battery-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		142AD093233EA18200ACF451 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = Battery.Mac/Battery_Mac.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				DEVELOPMENT_ASSET_PATHS = "\"Battery.Mac/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = Battery.Mac/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				MACOSX_DEPLOYMENT_TARGET = 10.15;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.Battery-Mac";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		14E36188233DC31400F9DF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		14E36189233DC31400F9DF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		14E3618B233DC31400F9DF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				IBSC_MODULE = BatteryX_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "BatteryX.Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		14E3618C233DC31400F9DF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				IBSC_MODULE = BatteryX_Watch_WatchKit_Extension;
+				INFOPLIST_FILE = "BatteryX.Watch WatchKit App/Info.plist";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch.watchkitapp";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+		14E3618E233DC31400F9DF95 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BatteryX.Watch WatchKit Extension/BatteryX.Watch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryX.Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BatteryX.Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Debug;
+		};
+		14E3618F233DC31400F9DF95 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_COMPLICATION_NAME = Complication;
+				CODE_SIGN_ENTITLEMENTS = "BatteryX.Watch WatchKit Extension/BatteryX.Watch WatchKit Extension.entitlements";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_ASSET_PATHS = "\"BatteryX.Watch WatchKit Extension/Preview Content\"";
+				DEVELOPMENT_TEAM = 72S993BNAV;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = "BatteryX.Watch WatchKit Extension/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = "com.andrewfinke.BatteryX-Watch.watchkitapp.watchkitextension";
+				PRODUCT_NAME = "${TARGET_NAME}";
+				SDKROOT = watchos;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 4;
+				WATCHOS_DEPLOYMENT_TARGET = 6.0;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1422CC31233C3A32005BE62F /* Build configuration list for PBXProject "BatteryX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1422CC48233C3A33005BE62F /* Debug */,
+				1422CC49233C3A33005BE62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1422CC4A233C3A33005BE62F /* Build configuration list for PBXNativeTarget "BatteryX" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1422CC4B233C3A33005BE62F /* Debug */,
+				1422CC4C233C3A33005BE62F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		142AD094233EA18200ACF451 /* Build configuration list for PBXNativeTarget "Battery.Mac" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				142AD092233EA18200ACF451 /* Debug */,
+				142AD093233EA18200ACF451 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E36190233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch WatchKit Extension" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E3618E233DC31400F9DF95 /* Debug */,
+				14E3618F233DC31400F9DF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E36191233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch WatchKit App" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E3618B233DC31400F9DF95 /* Debug */,
+				14E3618C233DC31400F9DF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		14E36192233DC31400F9DF95 /* Build configuration list for PBXNativeTarget "BatteryX.Watch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				14E36188233DC31400F9DF95 /* Debug */,
+				14E36189233DC31400F9DF95 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1422CC2E233C3A32005BE62F /* Project object */;
+}
